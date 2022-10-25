@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
-    <meta http-equiv="refresh" content="60">
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <link rel="icon" href="unnamed.png"/>
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
     <link rel="stylesheet" href="style.css">
@@ -85,6 +85,30 @@
             <div class="cta">
                 <button id="cta" type="submit" disabled>Generate QR code</button>
             </div>
+        </section>
+        <section id="qr-code-result" class="container container-back">
+            <header>
+                <h2>Your QR code is ready!</h2>
+                <h3>Scan this image to see it in action
+                </h3>
+            </header>
+
+            <div class="setting">
+                <img src="" alt="qr-code" id="qr-code-image" name="qr-code">
+            </div>
+
+            <div class="info">
+                <p>Right click on the image and select <b>"Save Image As"</b> to download the file
+                </p>
+
+                <p>Or need to make some changes?</p>
+
+                <div class="cta">
+                    <button id="edit" type="submit">
+                        Go back</button>
+                </div>
+            </div>
+
         </section>
     </main>
 </body>
